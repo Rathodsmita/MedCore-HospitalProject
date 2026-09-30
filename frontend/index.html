@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MedCore Hospital — Your Health, Our Priority</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#home"><span class="logo-mark">♥</span><span>MedCore<small>Your Health, Our Priority</small></span></a>
+    <button class="burger" aria-label="Menu" id="burger">☰</button>
+    <nav id="menu">
+      <a href="#home" class="on">Home</a><a href="#about">About</a><a href="#services">Services</a>
+      <a href="#doctors">Doctors</a><a href="#facilities">Facilities</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-fill nav-cta" href="#book">Book Appointment</a>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <span class="eyebrow">Welcome to MedCore</span>
+      <h1>Advanced Healthcare.<br>Compassionate Care.</h1>
+      <p>We provide high-quality medical services with modern technology and a team of experienced healthcare professionals.</p>
+      <div class="row"><a class="btn btn-fill" href="#book">Book Appointment</a><a class="btn btn-line" href="#services">Our Services →</a></div>
+      <div class="emergency"><span class="ico">☎</span><div><small>Emergency? Call 24/7</small><b>+91 98765 43210</b></div></div>
+    </div>
+    <div class="hero-art">
+      <img class="ph-hero" src="images/hero.jpg" alt="MedCore doctors and nurses team">
+      <div class="float-card"><span class="ico">♥</span><b>Better Care<br>For A Healthier<br>Tomorrow</b>
+        <svg viewBox="0 0 160 30"><path d="M0 16h40l8-12 10 24 10-18 6 6h86" fill="none" stroke="#1B8C8F" stroke-width="2"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="services"><div class="wrap">
+  <div class="head"><div><span class="eyebrow">Our Services</span><h2>Specialized Care for Every Stage of Life</h2></div><a class="more" href="#">View All Services →</a></div>
+  <div class="grid g6" id="serviceGrid"></div>
+</div></section>
+
+<section class="sec tint" id="doctors"><div class="wrap doc-layout">
+  <div class="doc-intro"><span class="eyebrow">Our Doctors</span><h2>Meet Our Expert Doctors</h2><p>Skilled. Experienced. Caring.</p><a class="btn btn-fill" href="#">View All Doctors →</a></div>
+  <div class="grid g4" id="doctorGrid"></div>
+</div></section>
+
+<section class="sec" id="about"><div class="wrap about">
+  <img class="ph-building" src="images/building.jpg" alt="MedCore Hospital building">
+  <div class="about-text"><span class="eyebrow">About Us</span><h2>Modern Healthcare with Trusted Medical Professionals</h2>
+    <p>MedCore Hospital is committed to providing world-class healthcare with compassion, integrity and excellence. Our goal is to ensure every patient receives the best care and support at every step of their journey.</p>
+    <a class="btn btn-fill" href="#">Learn More →</a></div>
+  <ul class="perks" id="perks"></ul>
+</div></section>
+
+<section class="sec" id="facilities" style="padding-top:0"><div class="wrap">
+  <div class="head"><div><span class="eyebrow">Our Facilities</span><h2>World-Class Facilities for Better Care</h2></div><a class="more" href="#">Explore All Facilities →</a></div>
+  <div class="grid g6" id="facilityGrid"></div>
+</div></section>
+
+<section class="sec tint" id="book"><div class="wrap book">
+  <div class="book-text"><span class="eyebrow">Book an Appointment</span><h2>Your Health Matters</h2><p>Schedule your appointment with our expert doctors and get the best care at your convenience.</p></div>
+  <form class="card form" id="apptForm" novalidate>
+    <label>Full Name *<input name="name" placeholder="Enter your name" required></label>
+    <label>Phone Number *<input name="phone" type="tel" placeholder="Enter your phone number" required pattern="[0-9+ ]{10,14}"></label>
+    <label>Department *<select name="dept" required id="deptSel"><option value="">Select department</option></select></label>
+    <label>Doctor *<select name="doctor" required id="docSel"><option value="">Select doctor</option></select></label>
+    <label>Date *<input name="date" type="date" required id="dateIn"></label>
+    <button class="btn btn-fill" type="submit">Book Appointment →</button>
+    <p class="msg" id="formMsg" role="status"></p>
+  </form>
+</div></section>
+
+<section class="sec" id="testimonials"><div class="wrap">
+  <div class="head"><div><span class="eyebrow">What Our Patients Say</span><h2>Real Stories. Happy Patients.</h2></div><a class="more" href="#">View All Testimonials →</a></div>
+  <div class="grid g3" id="reviewGrid"></div>
+</div></section>
+
+<section class="cta"><div class="wrap cta-in">
+  <span class="ico big">♥</span>
+  <div><span class="eyebrow light">Take the first step</span><h2>Your Health, Our Priority</h2><p>Book your appointment today and experience the best in healthcare.</p></div>
+  <a class="btn btn-white" href="#book">Book Appointment →</a>
+</div></section>
+
+<footer id="contact"><div class="wrap foot">
+  <div><a class="logo light" href="#home"><span class="logo-mark">♥</span><span>MedCore<small>Your Health, Our Priority</small></span></a>
+    <p>We are dedicated to providing quality healthcare services with compassion, innovation and excellence.</p></div>
+  <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#doctors">Doctors</a><a href="#contact">Contact</a></div>
+  <div><h4>Departments</h4><a href="#">Cardiology</a><a href="#">Neurology</a><a href="#">Orthopedics</a><a href="#">Pediatrics</a><a href="#">Dental Care</a><a href="#">Diagnostics</a></div>
+  <div><h4>Contact Us</h4><p>📍 123 Wellness Street, Pune - 411001</p><p>📞 +91 98765 43210</p><p>✉ info@medcorehospital.com</p><p>🕒 24/7 Emergency Support</p></div>
+</div><p class="copy">© 2026 MedCore Hospital. All rights reserved.</p></footer>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
